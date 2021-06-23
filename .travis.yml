@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Sasafras/docker-react -f Dockerfile.dev .
+  - docker build -t sasafras/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Sasafras/docker-react npm run test
+  - docker run -e CI=true sasafras/docker-react npm run test
